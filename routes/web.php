@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/players' , [PlayersController::class, 'index']);
+
+Route::get('/players/cadastra', [PlayeersController::class, 'store']);

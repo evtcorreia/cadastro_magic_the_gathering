@@ -11,15 +11,39 @@
 <body>
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <h1 class="display-4">Jogadores</h1>
-        @foreach($jogador as $j)
-        <h4>{{$j->nome}}</h4>
-        @endforeach
-        <p class="lead">.</p>
+        <h1 class="display-4">Players</h1>
+
+
+
+        <p class="lead"></p>
     </div>
 </div>
 
+<div class="container">
+    <button type="button" class="btn btn-primary mb-4" >Adicionar Jogador</button>
 
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">id</th>
+        <th scope="col">Jogador</th>
+        <th scope="col">Deck</th>
+        <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach($jogador as $j)
+        <tr>
+            <th scope="row">1</th>
+            <td>{{$j->nome}}</td>
+            <td>Gruul</td>
+            <td><a href="#">Editar </a>| <a href="#"> Excluir </a> | <a href="#" > Acessar </a></td>
+        </tr>
+    @endforeach
+    </tbody>
+</table>
+
+</div>
 
 
 </body>
