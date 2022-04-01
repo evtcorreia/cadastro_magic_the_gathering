@@ -12,6 +12,9 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
         <h1 class="display-4">Jogadores</h1>
+        @foreach($jogador as $j)
+        <h4>{{$j->nome}}</h4>
+        @endforeach
         <p class="lead">.</p>
     </div>
 </div>

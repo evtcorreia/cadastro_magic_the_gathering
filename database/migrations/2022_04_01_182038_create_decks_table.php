@@ -22,7 +22,7 @@ class CreateDecksTable extends Migration
 
             $table->foreign('jogador_id')
                 ->references('id')
-                ->on('jogadores');
+                ->on('jogadors');
 
             //$table->timestamps();
         });

@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Jogador extends Model
 {
 
+    use HasFactory;
+
+   // public $timestamps = false;
+
+    public function decks(){
+
+            return hasMany(Deck::class, 'jogador_id', 'id');
+
+    }
 }

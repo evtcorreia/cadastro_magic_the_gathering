@@ -13,7 +13,7 @@ class Jogador extends Migration
      */
     public function up()
     {
-        Schema::create('jogadores', function (Blueprint $table) {
+        Schema::create('jogadors', function (Blueprint $table) {
 
             $table->bigIncrements('id')->unsigned();
             $table->string('nome');

@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Carta extends Model
 {
     use HasFactory;
+
+    public function deck(){
+
+        return $this->belongsTo(Carta::class,'carta_id');
+    }
 }
